@@ -1,0 +1,55 @@
+{
+  "name": "carousel-universal-system",
+  "display_name": "Carousel Universal System",
+  "version": "1.0.0",
+  "entry": "SKILL.md",
+  "description": "Universal Instagram carousel skill for Codex, ChatGPT Projects, OpenClaw, and generic LLM workflows. Intake-first, data verification, photo-based mode, mixed-mode routing, anti-slop editing, and project-ready outputs.",
+  "language": "ru",
+  "compatibility": [
+    "codex",
+    "openclaw",
+    "claude",
+    "gpt-4",
+    "gpt-4o",
+    "gpt-4.1",
+    "o3",
+    "gemini",
+    "llama",
+    "mistral",
+    "generic-llm"
+  ],
+  "files": {
+    "skill": "SKILL.md",
+    "references": [
+      "references/OUTPUT_TEMPLATE.md",
+      "references/REFERENCE_CHECKLIST.md"
+    ],
+    "agents": {
+      "openai": "agents/openai.yaml"
+    }
+  },
+  "output": {
+    "format": "structured-content-package",
+    "bundle": [
+      "brief-assumptions",
+      "carousel-architecture",
+      "slide-copy",
+      "visual-system",
+      "data-and-claims-notes",
+      "verification-notes",
+      "prompt-pack",
+      "qa-notes"
+    ]
+  },
+  "core_rules": [
+    "Never generate the carousel immediately; start with intake",
+    "Route the task by scenario: content-only, data-first, photo-based, mixed mode, story, sales, case-study, or system mode",
+    "If facts, numbers, comparisons, yields, or product claims appear, verification is mandatory",
+    "Use maximally verified and current-at-preparation-time data; do not invent numbers",
+    "If user photos are part of the task, define safe zones before placing text",
+    "Do not place text on a face or emotional center of the image",
+    "Treat Russian text-in-image as draft-grade by default; production text should be layered separately",
+    "Always do an anti-slop pass before final output",
+    "State defaults explicitly; never make silent assumptions"
+  ]
+}

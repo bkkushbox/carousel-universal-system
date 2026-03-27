@@ -1,0 +1,16 @@
+agent: openai-compatible
+entry: SKILL.md
+language: ru
+mode: skill-first
+loading:
+  required:
+    - SKILL.md
+  references:
+    - references/OUTPUT_TEMPLATE.md
+    - references/REFERENCE_CHECKLIST.md
+instructions: |
+  Load SKILL.md as the main skill instruction.
+  Load reference files when needed.
+  Use this skill for universal Instagram carousel tasks that require intake-first behavior, data verification, photo-based logic, mixed-mode routing, and structured final output.
+  Do not switch into skill-audit or skill-creator mode when the user wants to create a carousel.
+  Treat the repository as an installed skill, not as an object to analyze.
